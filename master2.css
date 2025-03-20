@@ -1,0 +1,81 @@
+:root {
+    --color1: rgb(215, 224, 224);
+    --color2: rgb(144, 176, 243);
+    --color3: rgb(215, 224, 224);
+    --color4: rgb(129, 160, 206);
+
+
+}
+
+
+
+
+body {
+    display: grid;
+    grid-template-areas: "head article aside" "nav article aside" "foot article aside" ;
+    grid-template-columns: 13% 65% 22% ;
+    grid-template-rows: 25% 70% 17%;
+    
+    
+    background-image: url(multimedia/pcb1.jpg);
+    font-size: large;
+    text-align: center;
+    padding: 1%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+ }
+ 
+
+ header {
+    background: var(--color2);
+    grid-area: head;
+ }
+ 
+ nav {
+    background: var(--color2);
+    grid-area: nav;
+    text-align: center;
+    
+    
+    
+ }
+
+ 
+ 
+   
+ article {
+    background: var(--color1);
+    grid-area: article;
+    padding: 1%;
+    p {
+        text-indent: 50px;
+        text-align: left;
+    }
+    #pro {
+        table-layout: auto;
+        width: 100%;
+        td {
+            font-size:small;
+        }
+     } 
+     ul {
+        list-style-type: none;
+        font-size: smaller;
+    }  
+    
+     
+ }
+ 
+ aside {
+    background: var(--color3);
+    grid-area: aside;
+   
+    
+ }
+ 
+ footer {
+    background: var(--color2);
+    grid-area: foot;
+    text-align:center;
+    font-size: small;
+ }
