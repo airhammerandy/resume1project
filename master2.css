@@ -7,14 +7,29 @@
 
 }
 
+#div1 {
+   width: 63%;
+   display: flex;
+   flex-direction: row;
 
+   
+}
+#div2 {
+   width: 33%;
+   height: 100%;
+   
+}
 
 
 body {
-    display: grid;
+    /*display: grid;
     grid-template-areas: "head article aside" "nav article aside" "foot article aside" ;
     grid-template-columns: 13% 65% 22% ;
-    grid-template-rows: 25% 70% 17%;
+    grid-template-rows: 25% 70% 17%;*/
+   display: flex;
+   flex-direction: row;
+   
+
     
     
     background-image: url(multimedia/pcb1.jpg);
@@ -25,28 +40,32 @@ body {
     
  }
  
+ 
 
  header {
     background: var(--color2);
-    grid-area: head;
+    padding: 1%;
+    
+    
+    
  }
  
  nav {
     background: var(--color2);
-    grid-area: nav;
+    
     text-align: center;
-    
-    
+   
     
  }
 
- 
- 
+
+
    
  article {
     background: var(--color1);
     grid-area: article;
     padding: 1%;
+
     p {
         text-indent: 50px;
         text-align: left;
@@ -65,7 +84,7 @@ body {
     
      
  }
- 
+
  aside {
     background: var(--color3);
     grid-area: aside;
